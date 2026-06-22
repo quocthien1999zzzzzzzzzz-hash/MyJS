@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bài 1 — Quiz nhanh: Vai trò JS, biến, toán tử</title>
+  <link rel="stylesheet" href="../css/quiz1.css" />
+</head>
+<body>
+
+  <div class="quiz-wrapper">
+    <div class="quiz-header">
+      <span class="quiz-badge">▼ Bài 1</span>
+      <h1>Quiz nhanh: Vai trò JS, biến, toán tử</h1>
+    </div>
+
+    <form id="quizForm">
+
+      <!-- Câu 1 -->
+      <div class="question-card" id="q1-card">
+        <p class="question-text">1. JavaScript trong trang web chủ yếu phụ trách gì?</p>
+        <label class="option">
+          <input type="radio" name="q1" value="a" />
+          <span>Tạo cấu trúc trang</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q1" value="b" />
+          <span>Xử lý tương tác và hành vi</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q1" value="c" />
+          <span>Chỉ vẽ màu nền</span>
+        </label>
+        <div class="feedback" id="q1-feedback"></div>
+      </div>
+
+      <!-- Câu 2 -->
+      <div class="question-card" id="q2-card">
+        <p class="question-text">2. Từ khóa nào nên dùng cho giá trị không muốn gán lại?</p>
+        <label class="option">
+          <input type="radio" name="q2" value="a" />
+          <span>var</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q2" value="b" />
+          <span>let</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q2" value="c" />
+          <span>const</span>
+        </label>
+        <div class="feedback" id="q2-feedback"></div>
+      </div>
+
+      <!-- Câu 3 -->
+      <div class="question-card" id="q3-card">
+        <p class="question-text">3. Toán tử nào nên ưu tiên để so sánh nghiêm ngặt?</p>
+        <label class="option">
+          <input type="radio" name="q3" value="a" />
+          <span><code>===</code></span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q3" value="b" />
+          <span><code>==</code></span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q3" value="c" />
+          <span><code>=</code></span>
+        </label>
+        <div class="feedback" id="q3-feedback"></div>
+      </div>
+
+      <div class="actions">
+        <button type="button" id="btnSubmit" class="btn-primary">Chấm quiz</button>
+        <button type="button" id="btnReset" class="btn-secondary">Chưa chấm</button>
+      </div>
+
+    </form>
+
+    <div class="result-box" id="resultBox" style="display:none;">
+      <p id="resultText"></p>
+    </div>
+
+    <div class="note-box">
+      <p>📌 <strong>Hướng dẫn nộp:</strong> Tạo tệp <code>quiz1-note.txt</code> hoặc <code>quiz1.html</code> trong <code>MyJS/html</code>, ghi lại 3 đáp án và giải thích. Các thư mục liên quan: <code>/MyJS/html</code>, <code>/MyJS/css</code>, <code>/MyJS/js</code>.</p>
+    </div>
+
+    <div class="reminder-card">
+      <span class="bulb">💡</span>
+      <div>
+        <strong>Ghi nhớ cuối buổi</strong>
+        <p>Học JavaScript đừng học thuộc cú pháp rời rạc. Hãy tự hỏi mỗi đoạn code đang làm gì với giao diện và phản ứng nào của người dùng.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="../js/quiz1.js"></script>
+</body>
+</html>
