@@ -1,0 +1,87 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #0f1117;
+  color: #e2e8f0;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.4s;
+}
+
+.container {
+  text-align: center;
+  padding: 2.5rem 2rem;
+  background: #1e2433;
+  border: 1px solid #2d3748;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 480px;
+}
+
+.label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #4f86f7;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+#title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin-bottom: 0.5rem;
+  transition: color 0.4s, transform 0.3s;
+}
+
+#subtitle {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-bottom: 2rem;
+}
+
+.btn-row {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 0.55rem 1.1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+button:active { transform: scale(0.96); }
+
+#btnChange  { background: #4f86f7; color: #fff; }
+#btnChange:hover  { background: #3b6fd4; }
+
+#btnColor   { background: #a855f7; color: #fff; }
+#btnColor:hover   { background: #9333ea; }
+
+#btnReset   { background: #374151; color: #e2e8f0; }
+#btnReset:hover   { background: #4b5563; }
+
+.log {
+  font-size: 0.82rem;
+  color: #4ade80;
+  font-family: 'Courier New', monospace;
+  text-align: left;
+  background: #0f1117;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  min-height: 48px;
+  line-height: 1.8;
+  white-space: pre-wrap;
+}
