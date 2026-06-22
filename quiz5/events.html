@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bài 5 — Event Playground</title>
+  <link rel="stylesheet" href="events.css" />
+</head>
+<body>
+  <div class="container">
+    <p class="label">Bài 5 — Event Playground</p>
+    <h1>click · change · keyup · submit</h1>
+
+    <!-- 1. CLICK -->
+    <div class="card">
+      <div class="card-tag">click</div>
+      <h2>Bấm nút → hiện thông báo hoặc đổi chữ</h2>
+      <p id="clickText">Chưa bấm</p>
+      <button id="btnClick">Bấm tôi</button>
+    </div>
+
+    <!-- 2. CHANGE -->
+    <div class="card">
+      <div class="card-tag">change</div>
+      <h2>Chọn màu → đổi văn bản kết quả</h2>
+      <select id="colorSelect">
+        <option value="">-- Chọn màu --</option>
+        <option value="red">Đỏ 🔴</option>
+        <option value="green">Xanh lá 🟢</option>
+        <option value="blue">Xanh dương 🔵</option>
+        <option value="gold">Vàng 🟡</option>
+        <option value="violet">Tím 🟣</option>
+      </select>
+      <p id="changeResult">Hãy chọn một màu bên trên.</p>
+    </div>
+
+    <!-- 3. KEYUP -->
+    <div class="card">
+      <div class="card-tag">keyup</div>
+      <h2>Gõ tên → hiển thị xem trước</h2>
+      <input type="text" id="nameInput" placeholder="Gõ tên của bạn..." />
+      <p id="keyupPreview">Xem trước: <span id="previewSpan">...</span></p>
+    </div>
+
+    <!-- 4. SUBMIT -->
+    <div class="card">
+      <div class="card-tag">submit</div>
+      <h2>Gửi form → chặn mặc định bằng <code>preventDefault()</code></h2>
+      <form id="myForm">
+        <input type="text" id="formName" placeholder="Tên của bạn" required />
+        <button type="submit">Gửi</button>
+      </form>
+      <p id="submitResult" class="hidden"></p>
+    </div>
+  </div>
+
+  <script src="events.js"></script>
+</body>
+</html>

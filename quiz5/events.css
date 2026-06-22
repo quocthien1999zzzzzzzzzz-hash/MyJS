@@ -1,0 +1,127 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #0f1117;
+  color: #e2e8f0;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #4f86f7;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin-bottom: 1.8rem;
+}
+
+/* CARD */
+.card {
+  background: #1e2433;
+  border: 1px solid #2d3748;
+  border-radius: 12px;
+  padding: 1.4rem 1.5rem;
+  margin-bottom: 1.2rem;
+  position: relative;
+}
+
+.card-tag {
+  display: inline-block;
+  background: #4f86f7;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-radius: 4px;
+  padding: 0.15em 0.55em;
+  margin-bottom: 0.6rem;
+}
+
+.card h2 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #cbd5e1;
+  margin-bottom: 1rem;
+}
+
+/* INPUTS */
+input[type="text"],
+select {
+  background: #0f1117;
+  border: 1px solid #3b4a6b;
+  border-radius: 8px;
+  color: #e2e8f0;
+  padding: 0.5rem 0.85rem;
+  font-size: 0.9rem;
+  width: 100%;
+  outline: none;
+  margin-bottom: 0.75rem;
+  transition: border-color 0.2s;
+}
+
+input[type="text"]:focus,
+select:focus { border-color: #4f86f7; }
+
+/* BUTTON */
+button {
+  background: #4f86f7;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+button:hover { background: #3b6fd4; }
+button:active { transform: scale(0.96); }
+
+/* RESULTS */
+.card p {
+  font-size: 0.88rem;
+  color: #94a3b8;
+  margin-top: 0.5rem;
+  line-height: 1.6;
+  transition: color 0.3s;
+}
+
+#previewSpan {
+  font-weight: 700;
+  color: #facc15;
+}
+
+#submitResult {
+  margin-top: 0.75rem;
+  color: #4ade80;
+  font-weight: 600;
+}
+
+#submitResult.hidden { display: none; }
+
+code {
+  background: #2d3748;
+  color: #f59e0b;
+  padding: 0.1em 0.4em;
+  border-radius: 4px;
+  font-size: 0.85em;
+  font-family: 'Courier New', monospace;
+}
+
+form { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+form input { flex: 1; margin-bottom: 0; }
