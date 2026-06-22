@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cách 3 — External JS</title>
+  <style>
+    body { background:#0f1117; color:#e2e8f0; font-family:'Segoe UI',sans-serif; display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:100vh; gap:1rem; }
+    h1 { font-size:1.4rem; color:#f9a8d4; }
+    p.note { font-size:0.85rem; color:#64748b; max-width:400px; text-align:center; }
+    code { background:#1e2433; color:#f59e0b; padding:0.15em 0.4em; border-radius:4px; }
+    button { background:#ec4899; color:#fff; border:none; border-radius:8px; padding:0.6rem 1.4rem; font-size:1rem; font-weight:600; cursor:pointer; }
+    button:hover { background:#db2777; }
+  </style>
+</head>
+<body>
+  <h1>🔗 Cách 3: External JavaScript</h1>
+  <p class="note">JS tách riêng thành file <code>script.js</code>, liên kết qua thuộc tính <code>src</code>.</p>
+
+  <button id="btn">Bấm tôi</button>
+
+  <p class="note">
+    ✅ Tái sử dụng được, dễ bảo trì, phù hợp dự án thực tế<br>
+    ✅ Trình duyệt cache file JS → tải trang nhanh hơn
+  </p>
+
+  <!-- External: JS nằm trong file riêng, liên kết qua src -->
+  <script src="script.js"></script>
+</body>
+</html>

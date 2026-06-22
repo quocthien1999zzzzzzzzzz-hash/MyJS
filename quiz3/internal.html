@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cách 2 — Internal JS</title>
+  <style>
+    body { background:#0f1117; color:#e2e8f0; font-family:'Segoe UI',sans-serif; display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:100vh; gap:1rem; }
+    h1 { font-size:1.4rem; color:#86efac; }
+    p.note { font-size:0.85rem; color:#64748b; max-width:400px; text-align:center; }
+    code { background:#1e2433; color:#f59e0b; padding:0.15em 0.4em; border-radius:4px; }
+    button { background:#22c55e; color:#fff; border:none; border-radius:8px; padding:0.6rem 1.4rem; font-size:1rem; font-weight:600; cursor:pointer; }
+    button:hover { background:#16a34a; }
+  </style>
+</head>
+<body>
+  <h1>📄 Cách 2: Internal JavaScript</h1>
+  <p class="note">JS viết trong thẻ <code>&lt;script&gt;</code> bên trong file HTML.</p>
+
+  <button id="btn">Bấm tôi</button>
+
+  <p class="note">
+    ✅ Tổ chức hơn inline, không cần file riêng<br>
+    ❌ Khó tái sử dụng cho nhiều trang
+  </p>
+
+  <!-- Internal: JS nằm trong thẻ <script> của cùng file HTML -->
+  <script>
+    document.getElementById('btn').addEventListener('click', function () {
+      alert('Xin chào từ Internal JS! 📄');
+    });
+  </script>
+</body>
+</html>
