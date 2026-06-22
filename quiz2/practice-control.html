@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bài 2 — TODO code: re nhanh và lặp</title>
+  <link rel="stylesheet" href="../css/practice-control.css" />
+</head>
+<body>
+
+  <div class="page-wrapper">
+
+    <div class="page-header">
+      <span class="badge">▼ Bài 2</span>
+      <h1>TODO code: re nhanh và lặp</h1>
+    </div>
+
+    <div class="task-box">
+      <p>Hoàn thiện ý tưởng sau: nhập điểm, in xếp loại và tính tổng từ 1 đến 5.</p>
+    </div>
+
+    <!-- Code editor khu vực nhập điểm -->
+    <div class="editor-section">
+      <div class="editor-header">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <span class="editor-title">control.js</span>
+      </div>
+
+      <div class="editor-body">
+
+        <div class="editor-block">
+          <label class="editor-label">Nhập điểm số (score):</label>
+          <div class="input-row">
+            <span class="code-text">let score =</span>
+            <input type="number" id="scoreInput" value="7.2" min="0" max="10" step="0.1" class="score-input" />
+            <span class="code-text">;</span>
+          </div>
+        </div>
+
+        <div class="code-block">
+          <div class="comment">// TODO 1: dùng if...else if...else để in ra xếp loại</div>
+          <div class="code-line">if (score &gt;= 9) <span class="kw">→</span> <span class="str">"Xuất sắc"</span></div>
+          <div class="code-line">else if (score &gt;= 8) <span class="kw">→</span> <span class="str">"Giỏi"</span></div>
+          <div class="code-line">else if (score &gt;= 6.5) <span class="kw">→</span> <span class="str">"Khá"</span></div>
+          <div class="code-line">else if (score &gt;= 5) <span class="kw">→</span> <span class="str">"Trung bình"</span></div>
+          <div class="code-line">else <span class="kw">→</span> <span class="str">"Yếu"</span></div>
+        </div>
+
+        <div class="code-block">
+          <div class="code-line dim">console.log(<span class="str">"In các số từ 1 đến 5 bằng vòng for:"</span>);</div>
+          <div class="comment">// TODO 2: viết vòng for in các số từ 1 đến 5</div>
+          <div class="code-line"><span class="kw">for</span> (let i = 1; i &lt;= 5; i++) &#123; console.log(i); &#125;</div>
+        </div>
+
+        <div class="code-block">
+          <div class="code-line dim">let total = 0;</div>
+          <div class="comment">// TODO 3: viết vòng for tính tổng từ 1 đến 5</div>
+          <div class="code-line"><span class="kw">for</span> (let i = 1; i &lt;= 5; i++) &#123; total += i; &#125;</div>
+          <div class="code-line dim">console.log(<span class="str">"Tổng ="</span>, total);</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Nút chạy -->
+    <div class="run-row">
+      <button id="btnRun" class="btn-run">▶ Chạy code</button>
+      <button id="btnClear" class="btn-clear">Xóa output</button>
+    </div>
+
+    <!-- Output console -->
+    <div class="console-box" id="consoleBox">
+      <div class="console-header">Console output</div>
+      <div id="consoleOutput" class="console-output">
+        <span class="console-hint">Nhấn "Chạy code" để xem kết quả...</span>
+      </div>
+    </div>
+
+    <!-- Checklist -->
+    <div class="checklist">
+      <label class="check-item" id="check1">
+        <input type="checkbox" id="cb1" />
+        <span>Em đã viết xong khối <code>if...else if...else</code>.</span>
+      </label>
+      <label class="check-item" id="check2">
+        <input type="checkbox" id="cb2" />
+        <span>Em đã viết xong vòng lặp <code>for</code> in 1 → 5.</span>
+      </label>
+      <label class="check-item" id="check3">
+        <input type="checkbox" id="cb3" />
+        <span>Em đã tính được tổng = 15.</span>
+      </label>
+    </div>
+
+    <!-- Hướng dẫn nộp -->
+    <div class="note-box">
+      <p>📌 <strong>Hướng dẫn nộp:</strong> Tạo file <code>practice-control.html</code> và/hoặc <code>control.js</code>, lưu vào repo <strong>MyJS</strong>. Nộp 3 link thư mục <code>html</code>, <code>css</code>, <code>js</code>.</p>
+    </div>
+
+  </div>
+
+  <script src="../js/control.js"></script>
+  <script src="../js/practice-control.js"></script>
+</body>
+</html>
